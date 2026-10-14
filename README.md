@@ -25,6 +25,7 @@ ui-ux/
   SKILL.md                 operating manual: rules, workflow, quality floor, key numbers
   references/
     direction.md           brief reading, dials, product presets, design systems, redesign rules
+    styles-catalog.md      67 named visual styles with feel, fonts and key colors
     typography.md          scale, families, measure, details, loading
     color.md               strategies, OKLCH tokens, contrast, dark mode, data viz
     layout.md              spacing, grids, density, responsive, mobile, safe areas
@@ -51,6 +52,7 @@ and references. If you want the original depth, star and use them directly:
 - [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) (MIT): motion personalities, durations, choreography
 - [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) (MIT): concentric radius, optical alignment, micro-details
 - [ibelick/ui-skills](https://github.com/ibelick/ui-skills) (MIT): baseline UI rules, motion performance
+- [bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) (MIT): the 67-style catalog
 - [anthropics/skills](https://github.com/anthropics/skills): frontend-design direction thinking
 - [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) (MIT): interface guidelines
 - [Laws of UX](https://lawsofux.com) by Jon Yablonski, Nielsen Norman Group, Don Norman, WCAG 2.2

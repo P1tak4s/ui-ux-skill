@@ -12,6 +12,7 @@ with a purpose, then verify. This file is the operating manual. Detailed rules l
 | Need | Load |
 |---|---|
 | Pick a direction, product-type presets, redesign rules | `references/direction.md` |
+| 67 ready visual styles (brutalism, bento, editorial, retro, glass, riso...) as starting points | `references/styles-catalog.md` |
 | Fonts, scale, line length, numerals | `references/typography.md` |
 | Palette strategy, OKLCH, contrast, dark mode | `references/color.md` |
 | Spacing, grids, responsive, mobile/native, safe areas | `references/layout.md` |

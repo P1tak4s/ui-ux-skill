@@ -58,6 +58,9 @@ Instead:
 
 When the subject is vague, choose a concrete subject, audience and single job yourself and say so.
 
+If the user names a style ("make it brutalist", "riso", "bento"), or you need a fast starting point,
+pick the closest entry in `styles-catalog.md`, then adapt it to the brand and this file's rules.
+
 ## Use an existing design system when it fits
 
 If the brief or codebase names one, install the official package and use its components. Do not
