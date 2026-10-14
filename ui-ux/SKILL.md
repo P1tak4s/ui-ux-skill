@@ -31,9 +31,28 @@ They expect yours to work the same way.
 - Common violation: custom scrollbars, hamburger menus on desktop, icon-only buttons with unique meanings.
 
 ### 2. Hick's Law: decision time grows with the number of choices
-- Do: one primary button per view; max 3 to 4 pricing tiers with one marked "recommended"; progressive disclosure ("Advanced" collapsed); smart defaults preselected; search instead of long menus.
-- Related: **Choice Overload**. Too many equal options cause no choice at all.
-- Common violation: toolbars with 12 equal-weight buttons, forms asking everything up front.
+Formula: `RT = a + b * log2(n + 1)`. Time grows with the log of the choice count, so the
+first extra options hurt most. It holds for options the user must compare. A sorted list
+the user already knows how to search (countries, fonts) is not a Hick problem; scanning is.
+- Do:
+  - One primary button per view. Secondary actions are visually quieter (outline, text link).
+  - Max 3 to 4 pricing tiers, one marked "recommended" and preselected.
+  - Progressive disclosure: show the 20% of options used 80% of the time, collapse the rest under "More" or "Advanced".
+  - Smart defaults: preselect the most common choice (country from locale, the plan most people pick).
+  - Break one big decision into a few small sequential ones (wizard, one question per step on mobile).
+  - Long lists (> ~10 items): add search/typeahead, group under headings, or show "Recent" first.
+  - Highlight the recommended option so the user can skip comparing.
+- Code:
+  ```html
+  <!-- one primary, one quiet secondary, the rest hidden -->
+  <button class="btn-primary">Send invoice</button>
+  <button class="btn-ghost">Save draft</button>
+  <details><summary>More options</summary>...</details>
+  ```
+- Measure: time to first click and drop-off on the decision screen; if many users hover between options or leave, there are too many or they look too equal.
+- Related: **Choice Overload**. Too many equal options cause no choice at all (the jam study: 24 jams drew more people, 6 jams sold ~10x more).
+- Common violations: toolbars with 12 equal-weight buttons; forms asking everything up front; "Choose your plan" with 6 tiers and a comparison table of 40 rows; two equally loud buttons ("Save" and "Save and continue") side by side.
+- Do not overdo it: hiding frequently used actions behind menus makes experts slower. Simplify for the majority, keep shortcuts for power users.
 
 ### 3. Fitts's Law: time to hit a target depends on its size and distance
 - Do: touch targets at least **44x44 pt (iOS) / 48x48 dp (Android)**, WCAG 2.2 minimum 24x24 CSS px with spacing; primary action within thumb reach on mobile (bottom); make the whole row/card clickable, not only the text; label clicks focus their input; keep related actions close to what they act on.
@@ -89,8 +108,26 @@ Someone has to deal with it: the user or the system. Prefer the system.
 - Common violation: the main action buried in the middle of a long menu.
 
 ### 14. Aesthetic-Usability Effect: attractive looks are perceived as easier to use
-- Use it: consistent spacing scale, type scale, alignment and contrast buy trust.
-- Danger: it also hides real usability problems in testing. Test tasks, not opinions.
+Users forgive small usability issues in a product that looks polished, and judge a site's
+credibility within ~50 ms of first sight, mostly on visual design.
+- Do (polish that is cheap and pays off):
+  - One spacing scale (4/8 px steps: 4, 8, 12, 16, 24, 32, 48, 64). No random 13 px gaps.
+  - One type scale (e.g. 12/14/16/20/24/32), 2 font weights for most text, max 2 families.
+  - Everything aligned to a grid; one left edge per column.
+  - Limited palette: one brand/accent color, neutrals, plus semantic red/green/amber only for status.
+  - Consistent radius, shadow and icon set (one icon library, one stroke width).
+  - Real content and images in designs, not lorem ipsum, so the look survives real data.
+- Code:
+  ```css
+  :root {
+    --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 32px;
+    --text-sm: 14px; --text-base: 16px; --text-lg: 20px; --text-xl: 24px;
+    --radius: 8px;
+  }
+  ```
+- Danger: it hides real usability problems in testing. People rate a pretty prototype as "easy" even when they fail the task. Test with tasks and measure success rate and time, not opinions.
+- Do not trade function for looks: low-contrast gray text, icon-only buttons and hidden labels look clean but fail accessibility (see Hard numbers).
+- Common violations: mixed spacing and font sizes across screens; three shades of almost the same blue; default browser styles next to a custom design system; beautiful hero, broken form.
 
 ### 15. Pareto Principle: ~20% of features get ~80% of use
 - Do: find the core flows (analytics, support tickets) and make them fastest and most visible; demote the rest to secondary menus.
