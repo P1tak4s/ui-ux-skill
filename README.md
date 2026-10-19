@@ -34,7 +34,8 @@ ui-ux/
     polish.md              radius, depth, icons, images, interaction details
     anti-slop.md           visual, layout, copy and motion tells of generated UI
     laws.md                15 UX laws, Nielsen heuristics, Norman principles
-    review.md              personas, scoring, severity, pre-ship checklist, hardening
+    review.md              personas, scoring, severity, pre-ship checklist, hardening, DESIGN.md
+    experience.md          award-level sites: concept, driver, GSAP/Lenis/WebGL, loaders, transitions, budgets
 ```
 
 `SKILL.md` stays short; Claude loads a reference file only when the task needs it.
@@ -45,13 +46,14 @@ Rules here are rewritten and merged in my own words from these excellent open-so
 and references. If you want the original depth, star and use them directly:
 
 - [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache-2.0): direction contracts, surface modes, craft floor, critique scoring
-- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT): design dials, product presets, AI-slop tells, pre-flight checklist
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT): design dials, product presets, AI-slop tells, pre-flight checklist, hero and copy rules
 - [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT): UX rules, forms, navigation, charts
 - [emilkowalski/skills](https://github.com/emilkowalski/skills) (MIT): motion frequency gate, easing curves, interruptibility
 - [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) (MIT): motion audit, anti-patterns, reduced motion
 - [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) (MIT): motion personalities, durations, choreography
 - [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) (MIT): concentric radius, optical alignment, micro-details
 - [ibelick/ui-skills](https://github.com/ibelick/ui-skills) (MIT): baseline UI rules, motion performance
+- [juliobsz/skills](https://github.com/juliobsz/skills) (MIT): the awwwards skill, experience-site workflow, budgets and jury scoring
 - [bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) (MIT): the 67-style catalog
 - [anthropics/skills](https://github.com/anthropics/skills): frontend-design direction thinking
 - [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) (MIT): interface guidelines
